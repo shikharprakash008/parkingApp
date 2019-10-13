@@ -60,18 +60,37 @@
             android:background="@drawable/rec_gradient"
             android:layout_marginTop="20dp"
             android:textAllCaps="false"
-            android:text="Sign Up"
+            android:text="Sign In"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        <Button
-            android:layout_marginTop="10dp"
-            android:textColor="#FFF"
-            android:background="@drawable/rec_gradient"
-            android:textAllCaps="false"
-            android:text="Sign Up with FACEBOOK"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rec_gradient"
+            android:text="Sign Up "
+            android:textAllCaps="false"
+            android:textColor="#FFF" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageVIew"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/parking_icon_final"
+        android:background="@drawable/background_white"
+        android:padding="5dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageVIew"
+        android:text="Sign Up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>
