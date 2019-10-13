@@ -21,7 +21,7 @@
             android:layout_height="0dp"/>
     </LinearLayout>
     <LinearLayout
-    android:layout_marginTop="120dp"
+    android:layout_marginTop="250dp"
     android:id="@+id/layoutInput"
     android:layout_marginRight="20dp"
     android:layout_marginLeft="20dp"
@@ -41,7 +41,7 @@
         <EditText
             android:drawablePadding="20dp"
             android:drawableRight="@drawable/ic_person"
-            android:hint="zyz@gamil.com"
+            android:hint="xyz@gamil.com"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <TextView
@@ -65,8 +65,9 @@
             android:layout_height="wrap_content" />
 
         <Button
+            android:id="@+id/signUp"
             android:layout_width="match_parent"
-            android:layout_height="31dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/rec_gradient"
             android:text="Sign Up "
@@ -75,21 +76,21 @@
     </LinearLayout>
     <ImageView
         android:id="@+id/imageVIew"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="40dp"
         android:layout_marginBottom="5dp"
         android:layout_centerHorizontal="true"
-        android:src="@mipmap/parking_icon_final"
+        android:src="@mipmap/parking_sign"
         android:background="@drawable/background_white"
         android:padding="5dp"
-        android:layout_width="70dp"
-        android:layout_height="70dp" />
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
 
     <TextView
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textColor="#FFF"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/imageVIew"
-        android:text="Sign Up"
+        android:text="Sign In"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
