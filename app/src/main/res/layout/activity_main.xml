@@ -6,9 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<Button
-    android:id="@+id/button"
-    android:text="SIGN IN"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:text="LOGOUT"
+        android:textAlignment="center" />
 </RelativeLayout>
