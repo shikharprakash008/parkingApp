@@ -8,20 +8,16 @@ import android.view.View;
 import android.widget.Button;
 
 public class loginPage extends AppCompatActivity {
-    Button signUp;
+
+    public void register(View view){
+
+        startActivity(new Intent(loginPage.this, registrationPage.class));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_page);
-        signUp=findViewById(R.id.signUp);
-        signUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent signup=new Intent(loginPage.this,registrationPage.class);
-                startActivity(signup);
-            }
-        });
 
     }
 }

@@ -41,7 +41,7 @@
         <EditText
             android:drawablePadding="20dp"
             android:drawableRight="@drawable/ic_person"
-            android:hint="xyz@gamil.com"
+            android:hint="xyz@gmail.com"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <TextView
@@ -60,19 +60,20 @@
             android:background="@drawable/rec_gradient"
             android:layout_marginTop="20dp"
             android:textAllCaps="false"
-            android:text="Sign In"
+            android:text="Login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <Button
-            android:id="@+id/signUp"
+        <TextView
+            android:id="@+id/Register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/rec_gradient"
-            android:text="Sign Up "
-            android:textAllCaps="false"
-            android:textColor="#FFF" />
+            android:layout_marginTop="35dp"
+            android:fontFamily="monospace"
+            android:onClick="register"
+            android:text="Not a customer..Join us now!!"
+            android:textAlignment="center"
+            android:textColor="#ff000000" />
     </LinearLayout>
     <ImageView
         android:id="@+id/imageVIew"
