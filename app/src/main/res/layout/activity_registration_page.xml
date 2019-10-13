@@ -34,49 +34,57 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:layout_marginTop="5dp"
-            android:text="Name"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Name" />
+
         <EditText
-            android:drawablePadding="20dp"
-            android:drawableRight="@drawable/ic_person"
-            android:hint="xyz"
+            android:id="@+id/Name"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_person"
+            android:drawablePadding="20dp"
+            android:hint="xyz" />
         <TextView
             android:layout_marginTop="5dp"
             android:text="Email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
         <EditText
-            android:drawablePadding="20dp"
-            android:drawableRight="@drawable/email_icon"
-            android:hint="xyz@example.com"
+            android:id="@+id/Email"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/email_icon"
+            android:drawablePadding="20dp"
+            android:hint="xyz@example.com" />
         <TextView
             android:layout_marginTop="5dp"
             android:text="Car Number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
         <EditText
-            android:drawablePadding="20dp"
-            android:drawableRight="@drawable/car_icon"
-            android:hint="AB-12-12-9809"
+            android:id="@+id/Carno"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/car_icon"
+            android:drawablePadding="20dp"
+            android:hint="AB-12-12-9809" />
         <TextView
             android:layout_marginTop="5dp"
             android:text="Password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
         <EditText
-            android:drawablePadding="20dp"
-            android:drawableRight="@drawable/ic_lock"
-            android:hint="******"
+            android:id="@+id/pass"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_lock"
+            android:drawablePadding="20dp"
+            android:hint="******" />
         <Button
             android:id="@+id/register"
             android:textColor="#FFF"
