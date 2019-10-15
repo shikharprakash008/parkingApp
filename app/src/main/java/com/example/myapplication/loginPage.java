@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.Auth;
@@ -26,7 +27,8 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
 public class loginPage extends AppCompatActivity {
-    Button signup;
+    Button signup,login;
+    EditText mail, pwd;
     SignInButton button;
     FirebaseAuth mAuth;
     GoogleApiClient mGoogleApiClient;
@@ -34,12 +36,6 @@ public class loginPage extends AppCompatActivity {
 
 
     FirebaseAuth.AuthStateListener mAuthListener;
-
-
-    public void register(View view){
-
-        startActivity(new Intent(loginPage.this, registrationPage.class));
-    }
 
     @Override
     protected void onStart() {
@@ -61,8 +57,45 @@ public class loginPage extends AppCompatActivity {
             }
         });
 
+        login = findViewById(R.id.sign_in);
+
         button = findViewById(R.id.googleBtn);
         mAuth = FirebaseAuth.getInstance();
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                final String email = mail.getText().toString();
+                final String pass = pwd.getText().toString();
+
+                mAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(loginPage.this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+
+                        if(!task.isSuccessful()){
+
+                            if(pass.length() < 6){
+
+                                pwd.setError("Minimum password length is 6!!");
+
+                            } else{
+
+                                Toast.makeText(loginPage.this, "Authentication Failed", Toast.LENGTH_SHORT).show();
+                            }
+                        }else {
+
+                            Intent intent =new Intent(loginPage.this, MainActivity.class);
+                            startActivity(intent);
+                            finish();
+
+                        }
+
+                    }
+                });
+
+            }
+        });
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
