@@ -55,7 +55,7 @@ public class bookingSlot1 extends AppCompatActivity {
 
     public void success(View view){
 
-
+        startActivity(new Intent(bookingSlot1.this, Confirmation.class));
     }
 
     public void cancel(View view){
