@@ -39,7 +39,7 @@
             android:layout_height="80dp"
             android:id="@+id/linearHor1"
             android:orientation="horizontal">
-            
+
             <TextView
                 android:layout_width="200dp"
                 android:layout_height="60dp"
@@ -51,192 +51,97 @@
                 android:fontFamily="monospace"
                 android:textStyle="bold"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:layout_marginTop="20dp"
-                android:padding="10dp"
-                android:layout_marginLeft="60dp"
-                android:text="Amount"
-                android:textSize="20sp"
-                android:fontFamily="monospace"
-                android:textStyle="bold"/>
-
         </LinearLayout>
 
-        <LinearLayout
+        <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:id="@+id/linearHor2"
-            android:orientation="horizontal">
+            android:layout_height="425dp"
+            android:id="@+id/rGroup">
 
             <RadioButton
                 android:layout_width="200dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="10dp"
                 android:padding="10dp"
+                android:onClick="rbClick"
+                android:id="@+id/radioButton"
                 android:text="30 minutes"
                 android:textSize="20sp"
                 android:layout_marginLeft="12dp"
-                android:fontFamily="monospace"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:layout_marginTop="10dp"
-                android:padding="10dp"
-                android:layout_marginLeft="60dp"
-                android:text="5 Rs."
-                android:textSize="20sp"
                 android:fontFamily="monospace"
-                android:textStyle="bold"/>
+                android:checked="false"/>
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:id="@+id/linearHor3"
-            android:orientation="horizontal">
 
             <RadioButton
                 android:layout_width="200dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="10dp"
                 android:padding="10dp"
+                android:id="@+id/radioButton2"
+                android:onClick="rbClick2"
                 android:text="1 hour"
                 android:textSize="20sp"
                 android:layout_marginLeft="12dp"
-                android:fontFamily="monospace"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:layout_marginTop="10dp"
-                android:padding="10dp"
-                android:layout_marginLeft="60dp"
-                android:text="10 Rs."
-                android:textSize="20sp"
                 android:fontFamily="monospace"
-                android:textStyle="bold"/>
+                android:checked="false"/>
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:id="@+id/linearHor4"
-            android:orientation="horizontal">
 
             <RadioButton
                 android:layout_width="200dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="10dp"
                 android:padding="10dp"
+                android:id="@+id/radioButton3"
+                android:onClick="rbClick3"
                 android:text="1hr 30mins"
                 android:textSize="20sp"
                 android:layout_marginLeft="12dp"
-                android:fontFamily="monospace"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:layout_marginTop="10dp"
-                android:padding="10dp"
-                android:layout_marginLeft="60dp"
-                android:text="15 Rs."
-                android:textSize="20sp"
                 android:fontFamily="monospace"
-                android:textStyle="bold"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:id="@+id/linearHor5"
-            android:orientation="horizontal">
+                android:checked="false"/>
 
             <RadioButton
                 android:layout_width="200dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="10dp"
                 android:padding="10dp"
+                android:id="@+id/radioButton4"
+                android:onClick="rbClick4"
                 android:text="2 hours"
                 android:textSize="20sp"
                 android:layout_marginLeft="12dp"
-                android:fontFamily="monospace"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:layout_marginTop="10dp"
-                android:padding="10dp"
-                android:layout_marginLeft="60dp"
-                android:text="20 Rs."
-                android:textSize="20sp"
                 android:fontFamily="monospace"
-                android:textStyle="bold"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:id="@+id/linearHor6"
-            android:orientation="horizontal">
+                android:checked="false"/>
 
             <RadioButton
                 android:layout_width="200dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="10dp"
                 android:padding="10dp"
+                android:id="@+id/radioButton5"
+                android:onClick="rbClick5"
                 android:text="2hr 30mins"
                 android:textSize="20sp"
                 android:layout_marginLeft="12dp"
-                android:fontFamily="monospace"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:layout_marginTop="10dp"
-                android:padding="10dp"
-                android:layout_marginLeft="60dp"
-                android:text="25 Rs."
-                android:textSize="20sp"
                 android:fontFamily="monospace"
-                android:textStyle="bold"/>
+                android:checked="false"/>
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:id="@+id/linearHor7"
-            android:orientation="horizontal">
 
             <RadioButton
                 android:layout_width="200dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="10dp"
                 android:padding="10dp"
+                android:id="@+id/radioButton6"
+                android:onClick="rbClick6"
                 android:text="3 hours"
                 android:textSize="20sp"
                 android:layout_marginLeft="12dp"
-                android:fontFamily="monospace"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:layout_marginTop="10dp"
-                android:padding="10dp"
-                android:layout_marginLeft="60dp"
-                android:text="30 Rs."
-                android:textSize="20sp"
                 android:fontFamily="monospace"
-                android:textStyle="bold"/>
+                android:checked="false"/>
 
-        </LinearLayout>
+        </RadioGroup>
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
