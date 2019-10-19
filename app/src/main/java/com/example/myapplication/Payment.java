@@ -88,6 +88,7 @@ public class Payment extends AppCompatActivity {
 
                 //once we get the checksum we will initiailize the payment.
                 //the method is taking the checksum we got and the paytm object as the parameter
+                assert response.body() != null;
                 initializePaytmPayment(response.body().getChecksumHash(), paytm);
             }
 
@@ -129,6 +130,7 @@ public class Payment extends AppCompatActivity {
         Service.startPaymentTransaction(this, true, true, (PaytmPaymentTransactionCallback) this);
 
     }
+
  
 }
 
