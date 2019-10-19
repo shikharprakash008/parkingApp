@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class bookingSlot1 extends AppCompatActivity {
@@ -55,7 +53,7 @@ public class bookingSlot1 extends AppCompatActivity {
 
     public void success(View view){
 
-       startActivity(new Intent(bookingSlot1.this, Confirmation.class));
+       startActivity(new Intent(bookingSlot1.this, Confirmation_1.class));
     }
 
    // public void cancel(View view){

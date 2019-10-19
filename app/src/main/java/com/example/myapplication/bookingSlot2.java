@@ -50,15 +50,15 @@ public class bookingSlot2 extends AppCompatActivity {
 
     }
 
-   // public void success(View view){
+    public void success(View view){
 
-       // startActivity(new Intent(bookingSlot2.this, Confirmation.class));
-    //}
+        startActivity(new Intent(bookingSlot2.this, Confirmation_2.class));
+    }
 
-   // public void cancel(View view){
+    public void cancel(View view){
 
-       // startActivity(new Intent(bookingSlot2.this, MainActivity.class));
-  //  }
+        startActivity(new Intent(bookingSlot2.this, MainActivity.class));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
