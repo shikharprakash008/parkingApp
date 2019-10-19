@@ -54,10 +54,11 @@
         <EditText
 
             android:id="@+id/password"
-            android:inputType="numberPassword"
+            android:inputType="textPassword"
             android:drawablePadding="20dp"
             android:drawableRight="@drawable/ic_lock"
             android:hint="******"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <Button
