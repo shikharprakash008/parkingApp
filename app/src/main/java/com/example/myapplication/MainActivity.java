@@ -59,12 +59,12 @@ public class MainActivity extends AppCompatActivity {
                 String s = dataSnapshot.getValue().toString();
 
                 int stausOne=Integer.parseInt(s);
-               if(stausOne==1)
+               if(stausOne==0)
                {
                    status.setText("Not Available");
                    bookingSlotOne.setVisibility(View.INVISIBLE);
                }
-               else {
+               else{
                    status.setText("Available");
                    bookingSlotOne.setVisibility(View.VISIBLE);
                }
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 String s = dataSnapshot.getValue().toString();
                 int StatusTwo=Integer.parseInt(s);
-                if (StatusTwo==1){
+                if (StatusTwo==0){
                     statustwo.setText("Not Available");
                     bookingSlottwo.setVisibility(View.INVISIBLE);
                 }

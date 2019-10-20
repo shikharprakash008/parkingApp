@@ -7,8 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-public class bookingSlot1 extends AppCompatActivity {
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
+public class bookingSlot1 extends AppCompatActivity {
+    int payStatus=0;
+    FirebaseDatabase database;
+    DatabaseReference details;
     public void rbClick(View view){
 
         int a = 50;
@@ -52,7 +57,9 @@ public class bookingSlot1 extends AppCompatActivity {
 
 
     public void success(View view){
-
+        //details=database.getReference("details");
+        //payStatus=1;
+        //details.child("pStatus").setValue(payStatus);
        startActivity(new Intent(bookingSlot1.this, Confirmation_1.class));
     }
 
@@ -65,6 +72,8 @@ public class bookingSlot1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_booking_slot1);
+
+
 
     }
 
