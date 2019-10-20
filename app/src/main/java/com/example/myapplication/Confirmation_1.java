@@ -11,6 +11,7 @@ public class Confirmation_1 extends AppCompatActivity {
 
     public  void success(View view){
 
+
         Toast.makeText(this, "Confirmation mail has been sent to your registered email", Toast.LENGTH_SHORT).show();
     }
 

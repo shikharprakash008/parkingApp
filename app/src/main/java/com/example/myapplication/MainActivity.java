@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.myapplication.Model.Led;
+import com.example.myapplication.Model.User;
 import com.google.firebase.FirebaseError;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -25,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
 
     TextView status,statustwo;
     DatabaseReference ref,refOne;
+    FirebaseDatabase database;
+    DatabaseReference led,slot,slotTwo;
+    int payStatus=0,payStatusTwo=0;
 
     Button bookingSlotOne,bookingSlottwo;
 
@@ -37,6 +42,14 @@ public class MainActivity extends AppCompatActivity {
 
         status=findViewById(R.id.status);
         statustwo=findViewById(R.id.two);
+
+        //led data
+        database= FirebaseDatabase.getInstance();
+        led=database.getReference("Led");
+        slot=database.getReference("details");
+        //slotTwo=database.getReference("SlotTwo");
+
+
 
         ref= FirebaseDatabase.getInstance().getReference("val").child("status_slot_1");
         refOne=FirebaseDatabase.getInstance().getReference("val").child("status_slot_2");
@@ -67,15 +80,24 @@ public class MainActivity extends AppCompatActivity {
         bookingSlotOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                payStatus=1;
+                led.child("ledStatus").setValue(payStatus);
+                slot.child("slot").setValue(payStatus);
                 Intent intent=new Intent(MainActivity.this,bookingSlot1.class);
                 startActivity(intent);
+
+
             }
         });
         bookingSlottwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                payStatusTwo=1;
                 Intent intent=new Intent(MainActivity.this,bookingSlot2.class);
                 startActivity(intent);
+                led.child("ledStatus2").setValue(payStatusTwo);
+                slot.child("slot").setValue(2);
+
             }
         });
         refOne.addValueEventListener(new ValueEventListener() {

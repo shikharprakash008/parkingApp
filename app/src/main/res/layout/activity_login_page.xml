@@ -94,14 +94,14 @@
     </LinearLayout>
     <ImageView
         android:id="@+id/imageVIew"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="5dp"
         android:layout_centerHorizontal="true"
         android:src="@mipmap/parking_sign"
-        android:background="@drawable/background_white"
+
         android:padding="5dp"
-        android:layout_width="100dp"
-        android:layout_height="100dp" />
+        android:layout_width="180dp"
+        android:layout_height="180dp" />
 
     <TextView
         android:textSize="25sp"

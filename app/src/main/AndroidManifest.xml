@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Confirmation_2"></activity>
+        <activity android:name=".CurrentTime"></activity>
+        <activity android:name=".Confirmation_2" />
         <activity android:name=".Confirmation_1" />
         <activity android:name=".bookingSlot2" />
         <activity android:name=".bookingSlot1" />

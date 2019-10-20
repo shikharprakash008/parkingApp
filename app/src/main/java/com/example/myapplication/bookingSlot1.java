@@ -56,10 +56,10 @@ public class bookingSlot1 extends AppCompatActivity {
        startActivity(new Intent(bookingSlot1.this, Confirmation_1.class));
     }
 
-   // public void cancel(View view){
+   public void cancel(View view){
 
-     //   startActivity(new Intent(bookingSlot1.this, MainActivity.class));
-  //  }
+        startActivity(new Intent(bookingSlot1.this, MainActivity.class));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

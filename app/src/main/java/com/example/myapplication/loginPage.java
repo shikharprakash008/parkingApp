@@ -35,7 +35,7 @@ import com.google.firebase.database.ValueEventListener;
 public class loginPage extends AppCompatActivity {
 
 FirebaseDatabase database;
-DatabaseReference users;
+DatabaseReference users,details;
 Button signIn,signUp;
 EditText emailText,pwdText;
 
@@ -48,6 +48,7 @@ EditText emailText,pwdText;
         //Firebase Database
         database=FirebaseDatabase.getInstance();
         users=database.getReference("Users");
+        details=database.getReference("details");
 
         emailText=findViewById(R.id.set_email);
         pwdText=findViewById(R.id.password);
@@ -59,6 +60,7 @@ EditText emailText,pwdText;
             public void onClick(View v) {
                 Intent up=new Intent(loginPage.this,registrationPage.class);
                 startActivity(up);
+
             }
         });
         signIn.setOnClickListener(new View.OnClickListener() {

@@ -25,7 +25,7 @@ import com.google.firebase.database.ValueEventListener;
 public class registrationPage extends AppCompatActivity {
 
     FirebaseDatabase database;
-    DatabaseReference users;
+    DatabaseReference users,details;
 
     EditText nameText, emailText, carText, pwdText;
     Button btn;
@@ -43,6 +43,10 @@ public class registrationPage extends AppCompatActivity {
 
         database= FirebaseDatabase.getInstance();
         users=database.getReference("Users");
+        details=database.getReference("details");
+
+
+
 
 
         mAuth = FirebaseAuth.getInstance();
@@ -60,6 +64,9 @@ public class registrationPage extends AppCompatActivity {
                         emailText.getText().toString(),
                         carText.getText().toString(),
                         pwdText.getText().toString());
+                details.child("car no").setValue("HR 26 DA 2330");
+
+
                 users.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
